@@ -5,12 +5,12 @@ const differentials = [
   {
     icon: Award,
     title: 'Materiais Premium',
-    description: 'Trabalhamos apenas com as marcas líderes, como 3M, Across, NAR PPF, Faaftech, Pioneer, JBL e Hertz, garantindo qualidade, desempenho e durabilidade',
+    description: 'Trabalhamos apenas com as marcas líderes como 3M, Across, NAR PPF, Faaftech, Pioneer, JBL e Hertz, garantindo qualidade, desempenho e durabilidade',
   },
   {
     icon: Clock,
     title: 'Garantia Real',
-    description: 'Garantia de até 7 anos em nossos serviços de PPF e até 10 anos nos serviços de Película',
+    description: 'Garantia de até 7 anos em nossos serviços de PPF e até 10 anos nos serviços de Películas Automotivas',
   },
   {
     icon: Users,
@@ -37,7 +37,7 @@ export function WhyChooseSection() {
           className="text-center mb-12 sm:mb-16"
         >
           <p className="text-xs sm:text-sm tracking-[0.2em] text-accent mb-3 sm:mb-4">
-            Nossos Diferenciais
+            NOSSOS DIFERENCIAIS
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
             POR QUE ESCOLHER A
