@@ -17,61 +17,61 @@ interface GallerySectionProps {
 const galleryItems = [
   // PELICULA
   {
-    src: '/images/pelicula-new-1.jpg',
+    src: '/images/pelicula-new-1.webp',
     title: 'Instalação Profissional',
     category: 'PELÍCULA',
     priority: true,
   },
   {
-    src: '/images/pelicula-new-2.jpg',
+    src: '/images/pelicula-new-2.webp',
     title: 'Acabamento Detalhado',
     category: 'PELÍCULA',
     priority: true,
   },
   {
-    src: '/images/pelicula-new-3.jpg',
+    src: '/images/pelicula-new-3.webp',
     title: 'Visual Moderno',
     category: 'PELÍCULA',
     priority: true,
   },
   {
-    src: '/images/pelicula-new-4.jpg',
+    src: '/images/pelicula-new-4.webp',
     title: 'Proteção Solar',
     category: 'PELÍCULA',
     priority: true,
   },
   {
-    src: '/images/pelicula-new-5.jpg',
+    src: '/images/pelicula-new-5.webp',
     title: 'Conforto Térmico',
     category: 'PELÍCULA',
     priority: true,
   },
   {
-    src: '/images/pelicula-new-1.jpg',
+    src: '/images/pelicula-new-1.webp',
     title: 'Qualidade Garantida',
     category: 'PELÍCULA',
     priority: false,
   },
   {
-    src: '/images/pelicula-new-2.jpg',
+    src: '/images/pelicula-new-2.webp',
     title: 'Aplicação Perfeita',
     category: 'PELÍCULA',
     priority: false,
   },
   {
-    src: '/images/pelicula-new-3.jpg',
+    src: '/images/pelicula-new-3.webp',
     title: 'Estilo Único',
     category: 'PELÍCULA',
     priority: false,
   },
   {
-    src: '/images/pelicula-new-4.jpg',
+    src: '/images/pelicula-new-4.webp',
     title: 'Privacidade',
     category: 'PELÍCULA',
     priority: false,
   },
   {
-    src: '/images/pelicula-new-5.jpg',
+    src: '/images/pelicula-new-5.webp',
     title: 'Redução de Calor',
     category: 'PELÍCULA',
     priority: false,
@@ -80,19 +80,19 @@ const galleryItems = [
   // PPF
 
   {
-    src: '/images/gallery-ppf.jpg',
+    src: '/images/gallery-ppf.webp',
     title: 'Proteção Duradoura',
     category: 'PPF',
     priority: false,
   },
   {
-    src: '/images/ppf-new-1.jpg',
+    src: '/images/ppf-new-1.webp',
     title: 'Aplicação Detalhada',
     category: 'PPF',
     priority: true,
   },
   {
-    src: '/images/ppf-new-2.jpg',
+    src: '/images/ppf-new-2.webp',
     title: 'Proteção Premium',
     category: 'PPF',
     priority: true,
@@ -100,19 +100,19 @@ const galleryItems = [
 
   // ACESSÓRIO
   {
-    src: '/images/acessorio-1.jpg',
+    src: '/images/acessorio-1.webp',
     title: 'Central Multimídia',
     category: 'ACESSÓRIOS',
     priority: false,
   },
   {
-    src: '/images/acessorio-2.jpg',
+    src: '/images/acessorio-2.webp',
     title: 'Instalação de Som',
     category: 'ACESSÓRIOS',
     priority: true,
   },
   {
-    src: '/images/acessorio-4.jpg',
+    src: '/images/acessorio-4.webp',
     title: 'Acabamento Premium',
     category: 'ACESSÓRIOS',
     priority: false,
@@ -121,38 +121,38 @@ const galleryItems = [
 
   // FINALIZADOS
   {
-    src: '/images/finalizado-1.jpg',
+    src: '/images/finalizado-1.webp',
     title: 'BMW M4 Competition',
     category: 'FINALIZADOS',
     priority: true,
   },
   {
-    src: '/images/finalizado-2.jpg',
+    src: '/images/finalizado-2.webp',
     title: 'Mercedes C-Class',
     category: 'FINALIZADOS',
     priority: true,
   },
   {
-    src: '/images/finalizado-3.jpg',
+    src: '/images/finalizado-3.webp',
     title: 'Mercedes C-Class Frontal',
     category: 'FINALIZADOS',
     priority: false,
   },
   {
-    src: '/images/finalizado-4.png',
+    src: '/images/finalizado-4.webp',
     title: 'Porsche 911',
     category: 'FINALIZADOS',
     priority: true,
   },
 
   {
-    src: '/images/finalizado-3.jpg',
+    src: '/images/finalizado-3.webp',
     title: 'Detalhes Frontais',
     category: 'FINALIZADOS',
     priority: false,
   },
   {
-    src: '/images/finalizado-4.png',
+    src: '/images/finalizado-4.webp',
     title: 'Performance',
     category: 'FINALIZADOS',
     priority: true,
