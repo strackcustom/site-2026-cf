@@ -58,7 +58,7 @@ export function Footer() {
               <div className="flex items-center gap-3 mb-5">
                 <img
                   src={`${import.meta.env.BASE_URL}logo.webp`}
-                  alt="STRACK CUSTOM"
+                  alt="Logotipo da Strack Custom"
                   className="h-12 sm:h-14 w-auto object-contain"
                 />
               </div>
@@ -75,7 +75,7 @@ export function Footer() {
                 PROTEÇÃO • TECNOLOGIA • PERSONALIZAÇÃO
               </p>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">
-                Excelência em soluções automotivas com foco em acabamento impecável, materiais de alta performance e projetos sob medida.
+                Strack Custom: Excelência em soluções automotivas com foco em acabamento impecável, materiais de alta performance e projetos sob medida.
               </p>
             </motion.div>
 
@@ -147,7 +147,7 @@ export function Footer() {
                 }}
                 className="text-xs sm:text-sm text-muted-foreground/60 hover:text-accent transition-colors mt-2 cursor-pointer"
               >
-                feito por adatalyze@gmail.com
+                feito por Adatalyze
               </button>
             </div>
 
