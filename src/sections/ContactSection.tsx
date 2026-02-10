@@ -75,10 +75,10 @@ export function ContactSection() {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            ENTRE EM <span className="text-white">CONTATO</span>
+            ENTRE EM <span className="text-accent">CONTATO</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
-            Agende sua visita e transforme seu veículo com a qualidade.
+            Agende sua visita e transforme seu veículo com a qualidade Strack Custom.
           </p>
         </motion.div>
 
