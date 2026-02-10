@@ -20,7 +20,7 @@ export function AboutSection() {
                         QUEM SOMOS
                     </p>
                     <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-                        SOBRE A <span className="text-white">STRACK CUSTOM</span>
+                        SOBRE A <span className="text-accent">STRACK CUSTOM</span>
                     </h2>
                     <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
                         Especializada em proteção e tecnologia automotiva. Nossa missão é entregar perfeição técnica em PPF, películas automotivas e soluções de personalização, unindo técnica especializada, acabamento impecável e paixão por carros, para que o seu veículo receba o tratamento mais avançado do mercado.
@@ -28,7 +28,7 @@ export function AboutSection() {
                 </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    {/* Card 1: Foco Técnico */}
+                    {/* Card 1: Valorização */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export function AboutSection() {
                         </p>
                     </motion.div>
 
-                    {/* Card 2: Perfil do Cliente */}
+                    {/* Card 2: Confiança */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ export function AboutSection() {
                         </p>
                     </motion.div>
 
-                    {/* Card 3: Especialidades */}
+                    {/* Card 3: Soluções */}
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -83,3 +83,4 @@ export function AboutSection() {
         </section >
     );
 }
+
