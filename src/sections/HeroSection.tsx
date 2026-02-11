@@ -30,6 +30,13 @@ export function HeroSection() {
         </div> 
         {/* Mobile Image - Refactored to IMG tag for better object-fit control */}
         <div className="block sm:hidden absolute inset-0 bg-black">
+           <img
+            src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
+            alt="Aplicador Autorizado de Películas Automotivas 3M"
+            fetchpriority="high"
+            loading="eager"
+            className="w-full h-full object-contain object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
+          />
           <img
             src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
             alt="BMW M3 Strack Custom"
@@ -54,19 +61,6 @@ export function HeroSection() {
       {/* Conteúdo */}
       <motion.div style={{ opacity }} className="relative z-10 w-full px-6 sm:px-8 lg:px-12 xl:px-16 py-20 pt-28 sm:pt-28">
         <div className="max-w-4xl mx-auto text-center">
-
-          {/* Mobile Only: 3M Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="flex lg:hidden justify-center mb-3 sm:mb-6"
-          >
-            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white text-[10px] sm:text-xs font-bold shadow-md border border-white/10">
-              <Gem className="w-3 h-3 text-white animate-pulse" />
-              APLICADOR AUTORIZADO 3M
-            </span>
-          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
