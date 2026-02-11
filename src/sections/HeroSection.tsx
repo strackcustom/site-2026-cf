@@ -22,7 +22,7 @@ export function HeroSection() {
         <div className="hidden sm:block absolute inset-0">
           <img 
           src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
-          alt="BMW M3 Strack Custom"
+          alt="BMW M3 cinza personalizado pela Strack Custom com vidros com película nano cerâmica"
           fetchpriority="high"
           loading="eager"
           className="w-full h-full object-cover object-center saturate-[1.8] contrast-[1.1] brightness-[1.2]"
@@ -32,19 +32,12 @@ export function HeroSection() {
         <div className="block sm:hidden absolute inset-0 bg-black">
         <img
             src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
-            alt="BMW M3 Strack Custom"
+            alt="BMW M3 cinza personalizado pela Strack Custom com vidros com película nano cerâmica"
             fetchpriority="high"
             loading="eager"
             className="w-full h-full object-contain object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35] z-0"
           />
-             <img
-            src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
-            alt="Aplicador Autorizado de Películas Automotivas 3M"
-            fetchpriority="high"
-            loading="eager"
-            className="absolute top-18 left-1/2 -translate-x-1/2 z-10 w-32 h-auto object-contain"
-          />
-        </div>
+         </div>
 
         {/* Darker overlay for Silhouette effect - Reduced global opacity on mobile, but added top gradient for text */}
         <div className="absolute inset-0 bg-black/40 sm:bg-black/60 mix-blend-multiply" />
@@ -61,6 +54,21 @@ export function HeroSection() {
       {/* Conteúdo */}
       <motion.div style={{ opacity }} className="relative z-10 w-full px-6 sm:px-8 lg:px-12 xl:px-16 py-20 pt-28 sm:pt-28">
         <div className="max-w-4xl mx-auto text-center">
+       {/* Mobile Only: 3M Badge */}
+
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="flex flex-col items-center justify-center mb-4 sm:mb-6"
+          >
+            <img
+              src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
+              alt="Aplicador Autorizado de Películas Antivandalismo 3M"
+              className="h-24 sm:h-32 w-auto object-contain drop-shadow-lg"
+            />
+          </motion.div>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
