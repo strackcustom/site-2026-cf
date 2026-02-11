@@ -19,60 +19,70 @@ const galleryItems = [
   {
     src: '/images/pelicula-new-1.webp',
     title: 'Instalação Profissional',
+    alt: 'Instalação Profissional de Película Antivandalismo 3M em São Paulo',
     category: 'PELÍCULA',
     priority: true,
   },
   {
     src: '/images/pelicula-new-2.webp',
     title: 'Acabamento Detalhado',
+    alt: 'Películas automotivas com acabamento impecável em São Paulo',
     category: 'PELÍCULA',
     priority: true,
   },
   {
     src: '/images/pelicula-new-3.webp',
     title: 'Visual Moderno',
+    alt: 'Películas Nano Cerâmicas automotivas com excelente visibilidade',
     category: 'PELÍCULA',
     priority: true,
   },
   {
     src: '/images/pelicula-new-4.webp',
     title: 'Proteção Solar',
+    alt: 'Aplicação técnica de Película Antivandalismo 3M em vidro lateral',
     category: 'PELÍCULA',
     priority: true,
   },
   {
     src: '/images/pelicula-new-5.webp',
     title: 'Conforto Térmico',
+    alt: 'Carro com Película Escura G5 Privacidade total e redução de calor',
     category: 'PELÍCULA',
     priority: true,
   },
   {
     src: '/images/pelicula-new-1.webp',
     title: 'Qualidade Garantida',
+    alt: 'Strack Custom loja de personalização automotiva na Pompéia/São Paulo',
     category: 'PELÍCULA',
     priority: false,
   },
   {
     src: '/images/pelicula-new-2.webp',
     title: 'Aplicação Perfeita',
+    alt: 'Aplicação perfeita de películas automotivas na Pompéia/São Paulo',
     category: 'PELÍCULA',
     priority: false,
   },
   {
     src: '/images/pelicula-new-3.webp',
     title: 'Estilo Único',
+    alt: 'Strack Custom loja de personalização automotiva com acabamento impecável Pompéia/São Paulo',
     category: 'PELÍCULA',
     priority: false,
   },
   {
     src: '/images/pelicula-new-4.webp',
     title: 'Privacidade',
+    alt: 'Películas automotivas Nano Cerâmicas com maior privacidade e redução de calor',
     category: 'PELÍCULA',
     priority: false,
   },
   {
     src: '/images/pelicula-new-5.webp',
     title: 'Redução de Calor',
+    alt: 'Películas automotivas nano cerâmicas trazem maior conforto térmico com excelente visibilidade',
     category: 'PELÍCULA',
     priority: false,
   },
@@ -82,18 +92,21 @@ const galleryItems = [
   {
     src: '/images/gallery-ppf.webp',
     title: 'Proteção Duradoura',
+    alt: 'Aplicação técnica de PPF no capô para proteção contra pedras de estrada',
     category: 'PPF',
     priority: false,
   },
   {
     src: '/images/ppf-new-1.webp',
     title: 'Aplicação Detalhada',
+    alt: 'Instalador profissional ajustando película de proteção de pintura em para-choque curvo',
     category: 'PPF',
     priority: true,
   },
   {
     src: '/images/ppf-new-2.webp',
     title: 'Proteção Premium',
+    alt: 'Processo de instalação de PPF com acabamento invisível na Strack Custom',
     category: 'PPF',
     priority: true,
   },
@@ -102,18 +115,28 @@ const galleryItems = [
   {
     src: '/images/acessorio-1.webp',
     title: 'Central Multimídia',
+    alt: 'Instalação de central multimídia automotiva',
     category: 'ACESSÓRIOS',
     priority: false,
   },
   {
     src: '/images/acessorio-2.webp',
-    title: 'Instalação de Som',
+    title: 'Instalação de Multimídia Receiver',
+    alt: 'Instalação de Multimídia Receiver Pioneer em São Paulo',
+    category: 'ACESSÓRIOS',
+    priority: true,
+  },
+  {
+    src: '/images/acessorio-3.webp',
+    title: 'Experiência Sonora',
+    alt: 'Melhor experiência sonora com produtos de qualidade',
     category: 'ACESSÓRIOS',
     priority: true,
   },
   {
     src: '/images/acessorio-4.webp',
-    title: 'Acabamento Premium',
+    title: 'Sistemas de Som Automotivos',
+    alt: 'Instalação de Sistemas de Som Automotivos Hertz em São Paulo',
     category: 'ACESSÓRIOS',
     priority: false,
   },
@@ -122,38 +145,26 @@ const galleryItems = [
   // FINALIZADOS
   {
     src: '/images/finalizado-1.webp',
-    title: 'BMW M4 Competition',
+    title: 'Acabamento Premium',
     category: 'FINALIZADOS',
     priority: true,
   },
   {
     src: '/images/finalizado-2.webp',
-    title: 'Mercedes C-Class',
+    title: 'Estilo Único',
     category: 'FINALIZADOS',
     priority: true,
   },
   {
     src: '/images/finalizado-3.webp',
-    title: 'Mercedes C-Class Frontal',
+    title: 'Mais Conforto Térmico',
     category: 'FINALIZADOS',
     priority: false,
   },
   {
     src: '/images/finalizado-4.webp',
-    title: 'Porsche 911',
-    category: 'FINALIZADOS',
-    priority: true,
-  },
-
-  {
-    src: '/images/finalizado-3.webp',
-    title: 'Detalhes Frontais',
-    category: 'FINALIZADOS',
-    priority: false,
-  },
-  {
-    src: '/images/finalizado-4.webp',
-    title: 'Performance',
+    title: 'Maior Privacidade',
+    alt: '',
     category: 'FINALIZADOS',
     priority: true,
   },
@@ -205,7 +216,7 @@ export function GallerySection({ onImageClick }: GallerySectionProps) {
             NOSSOS <span className="text-white">TRABALHOS</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
-            Confira nossos projetos realizados em Películas, PPF e Acessórios.
+            Confira nossos projetos realizados em Películas, PPF e Acessórios
           </p>
         </motion.div>
 
@@ -331,7 +342,7 @@ export function GallerySection({ onImageClick }: GallerySectionProps) {
         >
           <img
             src={`${import.meta.env.BASE_URL}images/logo(1).webp`}
-            alt="STRACK CUSTOM"
+            alt="Logotipo STRACK CUSTOM"
             className="w-48 sm:w-64 md:w-80 h-auto object-contain opacity-40 hover:opacity-100 transition-opacity duration-700"
           />
         </motion.div>
