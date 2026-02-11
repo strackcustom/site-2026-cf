@@ -30,19 +30,19 @@ export function HeroSection() {
         </div> 
         {/* Mobile Image - Refactored to IMG tag for better object-fit control */}
         <div className="block sm:hidden absolute inset-0 bg-black">
-           <img
-            src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
-            alt="Aplicador Autorizado de Películas Automotivas 3M"
-            fetchpriority="high"
-            loading="eager"
-            className="w-32 h-32 object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
-          />
-          <img
+        <img
             src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
             alt="BMW M3 Strack Custom"
             fetchpriority="high"
             loading="eager"
-            className="w-full h-full object-contain object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
+            className="absolute inset-0 w-full h-full object-cover object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35] z-0"
+          />
+             <img
+            src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
+            alt="Aplicador Autorizado de Películas Automotivas 3M"
+            fetchpriority="high"
+            loading="eager"
+            className="absolute top-8 left-1/2 -translate-x-1/2 z-10 w-32 h-auto object-contain"
           />
         </div>
 
