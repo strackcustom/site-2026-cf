@@ -24,6 +24,8 @@ export function HeroSection() {
           <img
             src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
             alt="BMW M3 Strack Custom"
+            fetchpriority="high"
+            loading="eager"
             className="w-full h-full object-contain object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
           />
         </div>
