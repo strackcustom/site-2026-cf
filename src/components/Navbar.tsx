@@ -50,13 +50,7 @@ export function Navbar() {
             ))}
           </div>
 
-          <div className="hidden lg:block">
-               <img
-              src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
-              alt="Aplicador Autorizado 3M"
-              className="h-24 sm:h-32 w-auto object-contain drop-shadow-lg"
-            />
-          </div>
+          
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild className="lg:hidden">
