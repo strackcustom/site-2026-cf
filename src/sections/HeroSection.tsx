@@ -17,8 +17,17 @@ export function HeroSection() {
     <section id="inicio" ref={sectionRef} className="relative min-h-screen flex items-start sm:items-center justify-center overflow-hidden">
       {/* Imagem de Fundo */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
-        {/* Desktop Image */}
-        <div className="hidden sm:block absolute inset-0 bg-cover bg-center bg-no-repeat saturate-[1.8] contrast-[1.1] brightness-[1.2]" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-car.webp)` }} />
+      
+       {/* Desktop Image (Novo código otimizado) */}
+        <div className="hidden sm:block absolute inset-0">
+          <img 
+          src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
+          alt="BMW M3 Strack Custom"
+          fetchpriority="high"
+          loading="eager"
+          className="w-full h-full object-cover object-center saturate-[1.8] contrast-[1.1] brightness-[1.2]"
+          />
+        </div> 
         {/* Mobile Image - Refactored to IMG tag for better object-fit control */}
         <div className="block sm:hidden absolute inset-0 bg-black">
           <img
