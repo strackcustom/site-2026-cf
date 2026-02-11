@@ -51,10 +51,11 @@ export function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-red-600 to-red-700 text-white text-xs font-bold shadow-md">
-              <Gem className="w-3 h-3 text-white animate-pulse" />
-              APLICADOR AUTORIZADO 3M
-            </span>
+               <img
+              src={`${import.meta.env.BASE_URL}images/aplicador3m.webp`}
+              alt="Aplicador Autorizado 3M"
+              className="h-24 sm:h-32 w-auto object-contain drop-shadow-lg"
+            />
           </div>
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
