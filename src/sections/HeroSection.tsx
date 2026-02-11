@@ -35,7 +35,7 @@ export function HeroSection() {
             alt="Aplicador Autorizado de Películas Automotivas 3M"
             fetchpriority="high"
             loading="eager"
-            className="w-full h-full object-contain object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
+            className="w-32 h-32 object-center saturate-[1.2] contrast-[1.15] brightness-[2.2] scale-[1.35]"
           />
           <img
             src={`${import.meta.env.BASE_URL}images/hero-car.webp`}
