@@ -11,15 +11,15 @@ import {
 
 const promoImages = [
     {
-        src: '/images/promo-1.jpg',
+        src: '/images/promo-1.webp',
         alt: 'Promoção 1',
     },
     {
-        src: '/images/promo-2.jpg',
+        src: '/images/promo-2.webp',
         alt: 'Promoção 2',
     },
     {
-        src: '/images/promo-3.jpg',
+        src: '/images/promo-3.webp',
         alt: 'Promoção 3',
     },
 ];
@@ -102,3 +102,4 @@ export function PromotionsSection({ onImageClick }: PromotionsSectionProps) {
         </section>
     );
 }
+
