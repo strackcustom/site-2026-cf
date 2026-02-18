@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 
 const services = [
   {
+    id: 'antivandalismo', // ID para o link: #antivandalismo
     icon: Lock,
     title: 'Película Antivandalismo 3M',
     description: 'Segurança premium contra impactos e vandalismo. Retém estilhaços e dificulta invasões. Aplicador autorizado 3M.',
@@ -11,20 +12,23 @@ const services = [
     highlight: true,
   },
   {
-    icon: Sun, // Usando Sol para filme de controle solar
+    id: 'pelicula-automotiva', // ID para o link: #pelicula-automotiva
+    icon: Sun,
     title: 'Película Automotiva',
     description: 'Tecnologia com excelente custo-benefício. Garante privacidade, conforto térmico e ótima visibilidade sem interferir em sinais de GPS/Rádio.',
     features: ['Bloqueio UV: até 99%', 'Rejeição Solar (TSER): até 45%', '5 Anos de Garantia'],
     highlight: false,
   },
   {
-    icon: Shield, // Shield para alta proteção/performance
+    id: 'nano-ceramica', // ID para o link: #nano-ceramica
+    icon: Shield,
     title: 'Película Nano Cerâmica',
     description: 'Máxima performance em redução de calor e nitidez. Tecnologia Nano Cerâmica que não desbota e oferece conforto térmico superior e excelente visibilidade.',
     features: ['Rejeição IR: até 96%', 'Rejeição Solar: até 66%', '10 Anos de Garantia'],
     highlight: false,
   },
   {
+    id: 'ppf', // ID para o link: #ppf
     icon: Shield,
     title: 'PPF (Paint Protection Film)',
     description: 'Proteção invisível para a pintura contra riscos, pedras e chuva ácida. Mantém o valor do veículo com tecnologia auto regenerativa.',
@@ -32,16 +36,18 @@ const services = [
     highlight: false,
   },
   {
+    id: 'multimidia', // ID para o link: #multimidia
     icon: Music,
     title: 'Multimídia & Conectividade',
-    description: 'Centrais multimídia com Apple CarPlay e Android Auto, telas HD e integração com sistemas originais do veículo. Instalação 100% plug and play, sem cortes ou alterações na fiação original do veículo, preservando a garantia de fábrica.',
+    description: 'Centrais multimídia com Apple CarPlay e Android Auto, telas HD e integração com sistemas originais do veículo. Instalação 100% plug and play.',
     features: ['CarPlay/Android Auto', 'Câmera de Ré', 'Acabamento Original'],
     highlight: false,
   },
   {
+    id: 'acessorios', // ID para o link: #acessorios
     icon: Settings,
     title: 'Acessórios Tecnológicos',
-    description: 'Soluções avançadas como Streaming Box Faaftech (Netflix/YouTube) e Interface ShiftPower para eliminar delay do acelerador. Soluções com instalação plug and play, sem corte de fios, mantendo a originalidade e a garantia do veículo.',
+    description: 'Soluções avançadas como Streaming Box Faaftech (Netflix/YouTube) e Interface ShiftPower para eliminar delay do acelerador.',
     features: ['Streaming Box', 'ShiftPower', 'Plug and Play'],
     highlight: false,
   },
@@ -104,10 +110,14 @@ export function ServicesSection() {
               key={service.title}
               variants={itemVariants}
               className={`group relative bg-card rounded-xl sm:rounded-2xl p-5 sm:p-6 lg:p-8 border transition-all duration-300 hover:shadow-xl hover:-translate-y-1 ${service.highlight
-                ? 'border-accent/50 shadow-lg shadow-accent/5'
-                : 'border-border hover:border-accent/30'
+                  ? 'border-accent/50 shadow-lg shadow-accent/5'
+                  : 'border-border hover:border-accent/30'
                 }`}
             >
+              {/* --- ÂNCORA DE NAVEGAÇÃO --- */}
+              {/* O span fica invisível e posicionado acima do card para o menu não tapar o título */}
+              <span id={service.id} className="absolute -top-28 left-0 opacity-0 pointer-events-none" />
+              
               {/* Highlight Badge */}
               {service.highlight && (
                 <div className="absolute -top-3 left-6">
