@@ -168,7 +168,7 @@ export function ServicesSection() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2"
                 >
-                  Saiba mais
+                  Consulte os valores agora
                   <ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
                 </a>
               </Button>
