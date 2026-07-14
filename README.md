@@ -1,4 +1,4 @@
 
 
 
-## feito por Adatalyze
+## feito por contato@adatalyze.com
